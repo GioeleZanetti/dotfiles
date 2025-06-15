@@ -1,4 +1,6 @@
-vim.opt.colorcolumn = "100"
+vim.opt.colorcolumn = "80"
+vim.filetype.add({ extension = { tex = "tex" } })
+vim.g.lua_snippets_path = vim.fn.stdpath("config") .. "/lua/custom/snippets"
 vim.opt.relativenumber = true
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
