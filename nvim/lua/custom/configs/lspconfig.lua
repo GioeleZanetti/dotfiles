@@ -9,3 +9,10 @@ lspconfig.rust_analyzer.setup({
   filetypes = {"rust"},
   root_dir = lspconfig.util.root_pattern("Cargo.toml"),
 })
+
+lspconfig.jdtls.setup({
+  cmd = { vim.fn.stdpath("data") .. "/mason/bin/jdtls" },
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"java"},
+})
